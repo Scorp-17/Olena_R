@@ -1,20 +1,74 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Olena Reikina — Profesjonalna Księgowość</title>
 
-    <!-- ============================================================ -->
-    <!-- META-TAGI DLA TELEGRAM (OPEN GRAPH) -->
-    <!-- ============================================================ -->
-    <meta property="og:title" content="Olena Reikina — Profesjonalna księgowość" />
-    <meta property="og:description" content="Pełna księgowość, kadry i płace, doradztwo podatkowe. Ponad 8 lat doświadczenia. Skontaktuj się już dziś!" />
-    <meta property="og:image" content="https://raw.githubusercontent.com/Scorp-17/Olena_R/main/preview.png" />
-    <meta property="og:url" content="https://tinyurl.com/2re64u8f" />
+    <!-- Stara strona na GitHub Pages przekierowuje na nowy adres -->
+    <script>
+        if (location.hostname.endsWith('github.io')) {
+            location.replace('https://nr-biuro.pages.dev/' + location.hash);
+        }
+    </script>
+
+    <title>NR Biuro — biuro rachunkowe Bydgoszcz | Olena Reikina</title>
+    <meta name="description" content="Biuro rachunkowe w Bydgoszczy, ul. Gdańska 46 lok. 1C. Pełna i uproszczona księgowość, kadry i płace, rozliczenia VAT, PIT, CIT, ZUS. Zadzwoń: +48 538 572 727." />
+    <link rel="canonical" href="https://nr-biuro.pages.dev/" />
+
+    <!-- Open Graph (Facebook, Telegram, WhatsApp) -->
     <meta property="og:type" content="website" />
-    <!-- ============================================================ -->
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:site_name" content="NR Biuro" />
+    <meta property="og:title" content="NR Biuro — biuro rachunkowe w Bydgoszczy" />
+    <meta property="og:description" content="Pełna i uproszczona księgowość, kadry i płace, rozliczenia VAT, PIT, CIT. ul. Gdańska 46 lok. 1C, Bydgoszcz." />
+    <meta property="og:url" content="https://nr-biuro.pages.dev/" />
+    <meta property="og:image" content="https://nr-biuro.pages.dev/preview.png" />
 
+    <!-- Dane firmy dla Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AccountingService",
+      "name": "NR Biuro",
+      "url": "https://nr-biuro.pages.dev/",
+      "image": "https://nr-biuro.pages.dev/preview.png",
+      "telephone": "+48538572727",
+      "email": "nrbiuro.bydgoszcz@gmail.com",
+      "legalName": "NR BIURO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "taxID": "9671499882",
+      "vatID": "PL9671499882",
+      "identifier": [
+        { "@type": "PropertyValue", "propertyID": "KRS", "value": "0001252951" },
+        { "@type": "PropertyValue", "propertyID": "REGON", "value": "545212616" }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ul. Gdańska 46 lok. 1C",
+        "postalCode": "85-006",
+        "addressLocality": "Bydgoszcz",
+        "addressRegion": "kujawsko-pomorskie",
+        "addressCountry": "PL"
+      },
+      "areaServed": "Bydgoszcz",
+      "founder": [
+        { "@type": "Person", "name": "Olena Reikina" },
+        { "@type": "Person", "name": "Volodymyr Reikin" }
+      ],
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "16:00"
+      }],
+      "sameAs": [
+        "https://www.facebook.com/people/Olena-Reikina/pfbid025WWjFwYaHSFXaExBCuq9PuL6axBjtS3CXWMpdQ7D5Xw9byBe3H9PzpwuHK8zeZNLl/"
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
@@ -462,47 +516,6 @@
             margin: 0;
         }
 
-        /* ===== BIAŁE PLAKIETKI ===== */
-        .floating-badge {
-            position: absolute;
-            background: var(--color-white);
-            padding: 12px 20px;
-            border-radius: 12px;
-            box-shadow: var(--shadow-lg);
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-weight: 600;
-            font-size: 0.85rem;
-            animation: float 4s ease-in-out infinite;
-            color: var(--color-navy);
-            z-index: 10;
-        }
-        .floating-badge i {
-            color: var(--color-gold);
-            font-size: 1.2rem;
-        }
-        .floating-badge:nth-child(2) {
-            top: 10%;
-            right: -8%;
-            animation-delay: 1s;
-        }
-        .floating-badge:nth-child(3) {
-            bottom: 15%;
-            left: -10%;
-            animation-delay: 2s;
-        }
-
-        @keyframes float {
-            0%,
-            100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-12px);
-            }
-        }
-
         /* ===== SECTION ANIMATIONS ===== */
         .section-hidden {
             opacity: 0;
@@ -879,6 +892,11 @@
             color: rgba(255, 255, 255, 0.5);
         }
 
+        .testimonials-more {
+            margin-top: 48px;
+            text-align: center;
+        }
+
         /* ===== CTA ===== */
         .cta {
             background: var(--color-navy);
@@ -923,6 +941,16 @@
             gap: 16px;
             flex-wrap: wrap;
         }
+        .cta .cta-address {
+            margin: 32px auto 0;
+            font-style: normal;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+        .cta .cta-address a {
+            color: var(--color-gold);
+        }
 
         /* ===== FOOTER ===== */
         .footer {
@@ -962,6 +990,9 @@
         .footer ul li a:hover {
             color: var(--color-gold);
         }
+        .footer address {
+            font-style: normal;
+        }
 
         .footer-social {
             display: flex;
@@ -984,6 +1015,13 @@
             background: var(--color-gold);
             color: var(--color-navy);
             transform: translateY(-4px) scale(1.1);
+        }
+
+        .footer-legal {
+            font-size: 0.8rem;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.4);
+            margin-bottom: 24px;
         }
 
         .footer-bottom {
@@ -1075,9 +1113,6 @@
                 max-width: 100%;
                 padding: 28px 20px;
             }
-            .floating-badge {
-                display: none;
-            }
 
             .section-title {
                 font-size: 2.2rem;
@@ -1148,17 +1183,108 @@
                 padding: 14px 24px;
                 font-size: 0.85rem;
             }
+            .cta .btn-white {
+                font-size: 0.75rem;
+            }
+        }
+    
+        /* ===== CZYTELNOŚĆ I ADAPTACJA (większe czcionki, lepszy kontrast) ===== */
+        html { font-size: 106.25%; -webkit-text-size-adjust: 100%; }
+        :root { --color-gray: #4f5d6b; }
+        body { line-height: 1.7; }
+        .hero h1 { font-size: clamp(2.3rem, 6vw, 4.2rem); }
+        .section-title, .cta h2 { font-size: clamp(2rem, 4.5vw, 3rem); }
+        .hero p { font-size: clamp(1.08rem, 2.2vw, 1.25rem); color: rgba(255, 255, 255, 0.85); }
+        .section-sub { font-size: clamp(1.05rem, 2vw, 1.2rem); }
+        .section-label, .hero-badge { font-size: 0.85rem; }
+        .hero-stats .stat p { font-size: 0.9rem; color: rgba(255, 255, 255, 0.78); }
+        .hero-card .card-title { font-size: 1.1rem; }
+        .hero-card .card-sub { font-size: 0.95rem; color: rgba(255, 255, 255, 0.72); }
+        .hero-card .card-item .info h4 { font-size: 1.05rem; }
+        .hero-card .card-item .info p { font-size: 0.92rem; color: rgba(255, 255, 255, 0.72); }
+        .nav a, .btn { font-size: 1rem; }
+        .service-card h3 { font-size: 1.25rem; }
+        .service-card p, .about-content p { font-size: 1.02rem; }
+        .advantage-card h4 { font-size: 1.15rem; }
+        .advantage-card p { font-size: 1rem; color: rgba(255, 255, 255, 0.78); }
+        .advantages .section-sub { color: rgba(255, 255, 255, 0.78); }
+        .testimonial-card blockquote { font-size: 1.02rem; }
+        .testimonial-card .author .role { font-size: 0.88rem; color: rgba(255, 255, 255, 0.72); }
+        .cta p { color: rgba(255, 255, 255, 0.82); }
+        .cta .cta-address { font-size: 1.05rem; color: rgba(255, 255, 255, 0.85); }
+        .footer { color: rgba(255, 255, 255, 0.75); }
+        .footer-brand p, .footer ul li, .footer ul li a { font-size: 1rem; }
+        .footer ul li { margin-bottom: 14px; }
+        .footer-legal { font-size: 0.85rem; color: rgba(255, 255, 255, 0.62); }
+        .footer-bottom { font-size: 0.9rem; }
+        .gallery-item { font-size: 1rem; color: rgba(255, 255, 255, 0.7); }
+        .about-image .exp-badge .label { font-size: 0.9rem; opacity: 0.85; }
+        .btn { flex-wrap: wrap; justify-content: center; text-align: center; max-width: 100%; overflow-wrap: anywhere; }
+
+        @media (max-width: 768px) {
+            .container { padding: 0 16px; }
+            section { padding: 64px 0; }
+            .hero { min-height: auto; padding: 100px 0 90px; }
+            .hero::after { height: 80px; }
+            .hero-stats { flex-wrap: wrap; gap: 20px 32px; }
+            .services-grid, .advantages-grid, .testimonials-grid, .gallery-grid { gap: 16px; margin-top: 32px; }
+            .advantages-grid { grid-template-columns: 1fr; }
+            .service-card { padding: 28px 22px; }
+            .about-image .img-placeholder { min-height: 280px; }
+        }
+        @media (max-width: 480px) {
+            .btn, .cta .btn-white { width: 100%; padding: 15px 20px; font-size: 1rem; }
+            .hero-stats .stat h3 { font-size: 1.9rem; }
+            .hero-stats .stat p { font-size: 0.85rem; }
+        }
+
+        /* ===== MOBILNY PASEK KONTAKTU ===== */
+        .contact-bar { display: none; }
+        @media (max-width: 768px) {
+            .contact-bar {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                position: fixed;
+                left: 0; right: 0; bottom: 0;
+                z-index: 999;
+                background: var(--color-navy);
+                border-top: 1px solid rgba(201, 168, 76, 0.4);
+                padding-bottom: env(safe-area-inset-bottom, 0);
+            }
+            .contact-bar a {
+                display: flex; align-items: center; justify-content: center; gap: 8px;
+                min-height: 56px;
+                font-weight: 600; font-size: 1rem;
+            }
+            .contact-bar__call { background: var(--color-gold-gradient); color: var(--color-navy); }
+            .contact-bar__wa { color: var(--color-white); }
+            .contact-bar { transition: transform 0.25s ease; }
+            .contact-bar.is-hidden { transform: translateY(110%); }
+            .contact-bar a:focus-visible { outline: 3px solid var(--color-gold-light); outline-offset: -3px; }
+            body { padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px)); }
+        }
+
+        /* ===== OGRANICZONY RUCH ===== */
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { animation: none !important; transition: none !important; }
+            .section-hidden { opacity: 1; transform: none; }
         }
     </style>
+    <!-- Jeśli JavaScript nie zadziała, treść i tak będzie widoczna -->
+    <noscript>
+        <style>
+            .section-hidden { opacity: 1; transform: none; }
+        </style>
+    </noscript>
 </head>
 <body>
 
     <!-- ===== HEADER ===== -->
     <header class="header" id="header">
         <div class="container">
-            <a href="#" class="logo">
-                <span class="logo-icon">OR</span>
-                Olena<span>Reikina</span>
+            <a href="#hero" class="logo" aria-label="NR Biuro — strona główna">
+                <span class="logo-icon">NR</span> <span>Biuro</span>
             </a>
 
             <nav class="nav" id="nav">
@@ -1169,7 +1295,7 @@
                 <a href="#cta" class="nav-cta">Kontakt</a>
             </nav>
 
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <button class="hamburger" id="hamburger" aria-label="Otwórz menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -1177,6 +1303,7 @@
         </div>
     </header>
 
+    <main>
     <!-- ===== HERO ===== -->
     <section class="hero" id="hero">
         <div class="container">
@@ -1184,31 +1311,31 @@
                 <!-- Left -->
                 <div class="hero-content">
                     <div class="hero-badge">
-                        <i class="fas fa-star"></i> Doświadczona księgowa z certyfikatami
+                        <i class="fas fa-map-marker-alt"></i> Biuro rachunkowe · Bydgoszcz
                     </div>
                     <h1>
                         Twoje finanse <br />
                         <span class="highlight">w bezpiecznych</span> rękach
                     </h1>
                     <p>
-                        Prowadzę pełną oraz uproszczoną księgowość firm zgodnie z obowiązującymi przepisami prawa. Oferuję kompleksową obsługę księgową i doradztwo podatkowe.
+                        NR Biuro — Olena Reikina. Prowadzę pełną oraz uproszczoną księgowość firm zgodnie z obowiązującymi przepisami prawa. Oferuję kompleksową obsługę księgową, kadry i płace oraz rozliczenia podatkowe.
                     </p>
                     <div class="hero-actions">
-                        <a href="#cta" class="btn btn-primary">
-                            <i class="fas fa-arrow-right"></i> Skontaktuj się
+                        <a href="tel:+48538572727" class="btn btn-primary">
+                            <i class="fas fa-phone-alt"></i> Zadzwoń: 538 572 727
                         </a>
-                        <a href="#services" class="btn btn-outline">
-                            Zobacz usługi
+                        <a href="https://wa.me/48538572727" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
                         </a>
                     </div>
                     <div class="hero-stats">
                         <div class="stat">
-                            <h3>+8</h3>
+                            <h3>8+</h3>
                             <p>Lat doświadczenia</p>
                         </div>
                         <div class="stat">
-                            <h3>100%</h3>
-                            <p>Zadowolonych klientów</p>
+                            <h3>5,0</h3>
+                            <p>Ocena w Google</p>
                         </div>
                         <div class="stat">
                             <h3>4</h3>
@@ -1222,7 +1349,6 @@
                     <div class="hero-card">
                         <div class="card-title">🔥 Najpopularniejsze usługi</div>
                         <div class="card-sub">Kompleksowa obsługa księgowa</div>
-                        <!-- ===== POPRAWIONE TRZY GŁÓWNE POZYCJE ===== -->
                         <div class="card-item">
                             <div class="icon"><i class="fas fa-file-invoice"></i></div>
                             <div class="info">
@@ -1240,19 +1366,12 @@
                         <div class="card-item">
                             <div class="icon"><i class="fas fa-briefcase"></i></div>
                             <div class="info">
-                                <h4>Doradztwo podatkowe</h4>
-                                <p>VAT, PIT, CIT, optymalizacja</p>
+                                <h4>Rozliczenia podatkowe</h4>
+                                <p>VAT, PIT, CIT, deklaracje</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- ===== BIAŁE PLAKIETKI ===== -->
-                    <div class="floating-badge" style="top: 8%; right: -6%;">
-                        <i class="fas fa-shield-alt"></i> Gwarancja jakości
-                    </div>
-                    <div class="floating-badge" style="bottom: 20%; left: -8%;">
-                        <i class="fas fa-clock"></i> Szybka obsługa
-                    </div>
                 </div>
             </div>
         </div>
@@ -1265,7 +1384,7 @@
                 <span class="section-label"><i class="fas fa-cog"></i> Co oferuję</span>
                 <h2 class="section-title">Profesjonalne <span class="highlight">usługi księgowe</span></h2>
                 <p class="section-sub">
-                    Kompleksowe rozwiązania dla Twojej firmy — od księgowości po doradztwo podatkowe.
+                    Kompleksowe rozwiązania dla Twojej firmy — od księgowości po rozliczenia podatkowe.
                 </p>
             </div>
 
@@ -1283,17 +1402,17 @@
                 <div class="service-card">
                     <div class="icon"><i class="fas fa-users-cog"></i></div>
                     <h3>Kadry i płace</h3>
-                    <p>Kompleksowa obsługa kadrowo-płacowa, współpraca z ZUSem oraz rozliczanie pracowników.</p>
+                    <p>Kompleksowa obsługa kadrowo-płacowa, współpraca z ZUS oraz rozliczanie pracowników.</p>
                 </div>
                 <div class="service-card">
                     <div class="icon"><i class="fas fa-chart-line"></i></div>
                     <h3>Rozliczenia VAT, PIT, CIT</h3>
-                    <p>Profesjonalne rozliczanie podatków VAT, PIT i CIT oraz nadzór nad płatnościami.</p>
+                    <p>Profesjonalne rozliczanie podatków VAT, PIT i CIT oraz nadzór nad terminami płatności.</p>
                 </div>
                 <div class="service-card">
                     <div class="icon"><i class="fas fa-gavel"></i></div>
                     <h3>Współpraca z US i ZUS</h3>
-                    <p>Pełna współpraca z Urzędem Skarbowym oraz ZUSem, reprezentacja przed instytucjami.</p>
+                    <p>Pełna współpraca z Urzędem Skarbowym oraz ZUS, reprezentacja na podstawie pełnomocnictwa.</p>
                 </div>
                 <div class="service-card">
                     <div class="icon"><i class="fas fa-hand-holding-usd"></i></div>
@@ -1312,7 +1431,7 @@
                     <div class="img-placeholder">
                         <div class="big-icon"><i class="fas fa-calculator"></i></div>
                         <h3>Olena Reikina</h3>
-                        <p>Doświadczona księgowa z certyfikatami</p>
+                        <p>Członek zarządu NR Biuro sp. z o.o.</p>
                     </div>
                     <div class="exp-badge">
                         <div class="num">8+</div>
@@ -1323,13 +1442,13 @@
                     <span class="section-label"><i class="fas fa-info-circle"></i> O mnie</span>
                     <h3>Jestem doświadczoną księgową z wieloletnim doświadczeniem w branży</h3>
                     <p>
-                        Prowadzę pełną oraz uproszczoną księgowość firm zgodnie z obowiązującymi przepisami prawa. Moje usługi obejmują sporządzanie dokumentów księgowych, deklaracji podatkowych oraz sprawozdań finansowych.
+                        Nazywam się Olena Reikina i prowadzę biuro rachunkowe NR Biuro w Bydgoszczy. Zajmuję się pełną oraz uproszczoną księgowością firm zgodnie z obowiązującymi przepisami prawa. Moje usługi obejmują sporządzanie dokumentów księgowych, deklaracji podatkowych oraz sprawozdań finansowych.
                     </p>
                     <p>
-                        Przez lata zdobyłam doświadczenie, które pozwala mi efektywnie zarządzać finansami firmy i zapewniać pełną zgodność z przepisami prawa. Jestem certyfikowanym specjalistą ds. księgowości oraz kadr i płac.
+                        Przez lata zdobyłam doświadczenie, które pozwala mi efektywnie prowadzić sprawy księgowe firm i dbać o pełną zgodność z przepisami prawa. Posiadam certyfikaty z zakresu księgowości oraz kadr i płac.
                     </p>
                     <ul class="about-features">
-                        <li><i class="fas fa-check-circle"></i> Certyfikowany księgowy</li>
+                        <li><i class="fas fa-check-circle"></i> Certyfikat księgowego SKwP</li>
                         <li><i class="fas fa-check-circle"></i> Specjalista ds. kadr i płac</li>
                         <li><i class="fas fa-check-circle"></i> Pełna dyskrecja</li>
                         <li><i class="fas fa-check-circle"></i> Indywidualne podejście</li>
@@ -1381,7 +1500,7 @@
             <div class="text-center">
                 <span class="section-label"><i class="fas fa-comment-dots"></i> Opinie</span>
                 <h2 class="section-title">Co mówią <span class="highlight">moi klienci</span></h2>
-                <p class="section-sub">Realne opinie od przedsiębiorców, którzy powierzyli mi swoją księgowość.</p>
+                <p class="section-sub">Opinie przedsiębiorców, którzy powierzyli mi swoją księgowość.</p>
             </div>
 
             <div class="testimonials-grid">
@@ -1441,6 +1560,11 @@
                     </div>
                 </div>
 
+                <!--
+                    Opinia „Volodymyr R.” tymczasowo ukryta: Volodymyr Reikin jest współzałożycielem
+                    NR Biuro (patrz dane firmy). Opinia współwłaściciela przedstawiona jako opinia klienta
+                    wprowadza w błąd. Jeśli to inna osoba — przywróć blok.
+
                 <div class="testimonial-card">
                     <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                     <blockquote>
@@ -1454,11 +1578,17 @@
                         </div>
                     </div>
                 </div>
+                -->
+
+                <!--
+                    Opinia Romana Kotsiubana tymczasowo ukryta: tekst wygląda na błędne
+                    automatyczne tłumaczenie („Natychmiast przestań rozdawać wszystko!…”).
+                    Wstaw poprawny tekst (oryginał od klienta) i odkomentuj ten blok.
 
                 <div class="testimonial-card">
                     <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                     <blockquote>
-                        „Znam tę osobę jako godną zaufania i sumienną! Natychmiast przestań rozdawać wszystko! Jeżeli potrzebujesz kolejnego papierowego robota to również pomoże! Polecam, można zwariować!”
+                        „Znam tę osobę jako godną zaufania i sumienną! …”
                     </blockquote>
                     <div class="author">
                         <div class="avatar">RK</div>
@@ -1468,6 +1598,13 @@
                         </div>
                     </div>
                 </div>
+                -->
+            </div>
+
+            <div class="testimonials-more">
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=NR%20Biuro%20Gda%C5%84ska%2046%20Bydgoszcz" target="_blank" rel="noopener" class="btn btn-gold-outline">
+                    <i class="fab fa-google"></i> Zobacz wszystkie opinie w Google
+                </a>
             </div>
         </div>
     </section>
@@ -1480,65 +1617,92 @@
                 Zadzwoń lub napisz — chętnie odpowiem na wszystkie pytania i pomogę dobrać najlepsze rozwiązanie dla Twojej firmy.
             </p>
             <div class="btn-group">
-                <a href="tel:+48579207031" class="btn btn-primary">
-                    <i class="fas fa-phone-alt"></i> +48 579 207 031
+                <a href="tel:+48538572727" class="btn btn-primary">
+                    <i class="fas fa-phone-alt"></i> +48 538 572 727
                 </a>
-                <a href="mailto:olenabiuro.bydgoszcz@gmail.com" class="btn btn-white">
-                    <i class="fas fa-envelope"></i> olenabiuro.bydgoszcz@gmail.com
+                <a href="https://wa.me/48538572727" target="_blank" rel="noopener noreferrer" class="btn btn-white">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="mailto:nrbiuro.bydgoszcz@gmail.com" class="btn btn-white">
+                    <i class="fas fa-envelope"></i> nrbiuro.bydgoszcz@gmail.com
                 </a>
             </div>
+            <address class="cta-address">
+                <strong>NR Biuro</strong> — Olena Reikina<br />
+                ul. Gdańska 46 lok. 1C, 85-006 Bydgoszcz<br />
+                Poniedziałek–piątek: 8:00–16:00<br />
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=NR%20Biuro%20Gda%C5%84ska%2046%20Bydgoszcz" target="_blank" rel="noopener">
+                    <i class="fas fa-map-marker-alt"></i> Pokaż na mapie
+                </a>
+            </address>
         </div>
     </section>
+    </main>
+
+    <!-- ===== MOBILNY PASEK KONTAKTU ===== -->
+    <div class="contact-bar" aria-label="Szybki kontakt">
+        <a href="tel:+48538572727" class="contact-bar__call"><i class="fas fa-phone-alt" aria-hidden="true"></i> Zadzwoń</a>
+        <a href="https://wa.me/48538572727" target="_blank" rel="noopener noreferrer" class="contact-bar__wa"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+    </div>
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="#" class="logo">
-                        <span class="logo-icon">OR</span>
-                        Olena<span>Reikina</span>
+                    <a href="#hero" class="logo" aria-label="NR Biuro — strona główna">
+                        <span class="logo-icon">NR</span> <span>Biuro</span>
                     </a>
-                    <p>Profesjonalne usługi księgowe i doradztwo podatkowe. Ponad 8 lat doświadczenia, certyfikaty i setki zadowolonych klientów.</p>
+                    <p>Biuro rachunkowe w Bydgoszczy. Profesjonalne usługi księgowe, kadry i płace oraz rozliczenia podatkowe. Ponad 8 lat doświadczenia.</p>
                     <div class="footer-social">
-                        <a href="https://t.me/+48579207031" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
-                        <a href="https://wa.me/48579207031" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.facebook.com/people/Olena-Reikina/pfbid025WWjFwYaHSFXaExBCuq9PuL6axBjtS3CXWMpdQ7D5Xw9byBe3H9PzpwuHK8zeZNLl/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="https://t.me/+48538572727" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://wa.me/48538572727" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/people/Olena-Reikina/pfbid025WWjFwYaHSFXaExBCuq9PuL6axBjtS3CXWMpdQ7D5Xw9byBe3H9PzpwuHK8zeZNLl/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                     </div>
                 </div>
                 <div>
                     <h4>Usługi</h4>
                     <ul>
-                        <li><a href="#">Pełna księgowość</a></li>
-                        <li><a href="#">Kadry i płace</a></li>
-                        <li><a href="#">Deklaracje podatkowe</a></li>
-                        <li><a href="#">Doradztwo podatkowe</a></li>
+                        <li><a href="#services">Pełna księgowość</a></li>
+                        <li><a href="#services">Kadry i płace</a></li>
+                        <li><a href="#services">Deklaracje podatkowe</a></li>
+                        <li><a href="#services">Rozliczenia VAT, PIT, CIT</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4>O mnie</h4>
                     <ul>
-                        <li><a href="#">Doświadczenie</a></li>
-                        <li><a href="#">Certyfikaty</a></li>
-                        <li><a href="#">Opinie</a></li>
-                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#about">Doświadczenie</a></li>
+                        <li><a href="#advantages">Certyfikaty</a></li>
+                        <li><a href="#testimonials">Opinie</a></li>
+                        <li><a href="#cta">Kontakt</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4>Kontakt</h4>
-                    <ul>
-                        <li><a href="tel:+48579207031"><i class="fas fa-phone" style="margin-right:8px;"></i>+48 579 207 031</a></li>
-                        <li><a href="mailto:olenabiuro.bydgoszcz@gmail.com"><i class="fas fa-envelope" style="margin-right:8px;"></i>olenabiuro.bydgoszcz@gmail.com</a></li>
-                        <li><i class="fas fa-map-marker-alt" style="margin-right:8px;"></i>Bydgoszcz, Polska</li>
-                    </ul>
+                    <address>
+                        <ul>
+                            <li><strong style="color: var(--color-white);">NR Biuro</strong> — Olena Reikina</li>
+                            <li><a href="tel:+48538572727"><i class="fas fa-phone" style="margin-right:8px;"></i>+48 538 572 727</a></li>
+                            <li><a href="mailto:nrbiuro.bydgoszcz@gmail.com"><i class="fas fa-envelope" style="margin-right:8px;"></i>nrbiuro.bydgoszcz@gmail.com</a></li>
+                            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=NR%20Biuro%20Gda%C5%84ska%2046%20Bydgoszcz" target="_blank" rel="noopener"><i class="fas fa-map-marker-alt" style="margin-right:8px;"></i>ul. Gdańska 46 lok. 1C, 85-006 Bydgoszcz</a></li>
+                            <li><i class="fas fa-clock" style="margin-right:8px;"></i>Pon.–pt.: 8:00–16:00</li>
+                            <li>NIP: 9671499882 · REGON: 545212616</li>
+                        </ul>
+                    </address>
                 </div>
             </div>
 
+            <p class="footer-legal">
+                NR Biuro spółka z ograniczoną odpowiedzialnością, ul. Gdańska 46 lok. 1C, 85-006 Bydgoszcz.
+                Sąd Rejonowy w Bydgoszczy, XIII Wydział Gospodarczy Krajowego Rejestru Sądowego,
+                KRS: 0001252951, NIP: 9671499882, REGON: 545212616, kapitał zakładowy: 5 000,00 zł.
+            </p>
+
             <div class="footer-bottom">
-                <span>© 2026 Olena Reikina. Wszystkie prawa zastrzeżone.</span>
+                <span>© 2026 NR Biuro spółka z ograniczoną odpowiedzialnością. Wszystkie prawa zastrzeżone.</span>
                 <span>
-                    <a href="#">Polityka prywatności</a> &middot;
-                    <a href="#">Regulamin</a>
+                    <a href="polityka-prywatnosci.html">Polityka prywatności</a>
                 </span>
             </div>
         </div>
@@ -1546,6 +1710,52 @@
 
     <!-- ===== SCRIPT ===== -->
     <script>
+        // === Anonimowe liczenie kliknięć w kontakt (bez cookies, bez danych osobowych) ===
+        (function () {
+            const KINDS = [
+                ['tel:', 'call'], ['mailto:', 'email'], ['https://wa.me/', 'whatsapp'],
+                ['https://t.me/', 'telegram'], ['https://www.facebook.com/', 'facebook'],
+                ['https://www.google.com/maps', 'maps']
+            ];
+            function source() {
+                const p = new URLSearchParams(location.search).get('src');
+                if (p && /^[a-z0-9_-]{1,20}$/i.test(p)) return p.toLowerCase();
+                let ref = '';
+                try { ref = document.referrer ? new URL(document.referrer).hostname : ''; } catch (e) {}
+                if (!ref || ref === location.hostname) return 'direct';
+                if (/(^|\.)google\./.test(ref)) return 'google';
+                if (/facebook\.com$|fb\.com$/.test(ref)) return 'facebook';
+                return 'other';
+            }
+            const src = source();
+            document.addEventListener('click', function (e) {
+                const a = e.target.closest && e.target.closest('a[href]');
+                if (!a) return;
+                const href = a.getAttribute('href');
+                const kind = KINDS.find(k => href.startsWith(k[0]));
+                if (!kind) return;
+                const body = JSON.stringify({ e: kind[1], src: src });
+                try {
+                    if (!navigator.sendBeacon || !navigator.sendBeacon('/api/track', new Blob([body], { type: 'application/json' }))) {
+                        fetch('/api/track', { method: 'POST', body: body, keepalive: true, headers: { 'Content-Type': 'application/json' } }).catch(function () {});
+                    }
+                } catch (err) { /* liczenie nie może blokować kontaktu */ }
+            }, { capture: true });
+        })();
+
+        // === Pasek kontaktu: chowany, gdy przyciski w hero są widoczne ===
+        (function () {
+            const bar = document.querySelector('.contact-bar');
+            const heroActions = document.querySelector('.hero-actions');
+            if (!bar || !heroActions || !('IntersectionObserver' in window)) return;
+            new IntersectionObserver(function (entries) {
+                const visible = entries[0].isIntersecting;
+                bar.classList.toggle('is-hidden', visible);
+                bar.toggleAttribute('inert', visible);
+            }).observe(heroActions);
+        })();
+
+        const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         // === Header scroll effect ===
         const header = document.getElementById('header');
         window.addEventListener('scroll', () => {
@@ -1619,7 +1829,7 @@
             rootMargin: '0px 0px -40px 0px'
         });
 
-        cards.forEach((card, index) => {
+        if (!reduceMotion) cards.forEach((card, index) => {
             card.style.opacity = '0';
             card.style.transform = 'translateY(30px) scale(0.96)';
             card.style.transition = `opacity 0.7s ease ${index * 0.07}s, transform 0.7s ease ${index * 0.07}s`;
@@ -1628,7 +1838,7 @@
 
         // === Hero stats animation ===
         const heroStats = document.querySelectorAll('.hero-stats .stat');
-        heroStats.forEach((stat, index) => {
+        if (!reduceMotion) heroStats.forEach((stat, index) => {
             stat.style.opacity = '0';
             stat.style.transform = 'translateY(16px)';
             stat.style.transition = `opacity 0.6s ease ${index * 0.12 + 0.3}s, transform 0.6s ease ${index * 0.12 + 0.3}s`;
@@ -1640,7 +1850,7 @@
 
         // Hero card items animation
         const cardItems = document.querySelectorAll('.hero-card .card-item');
-        cardItems.forEach((item, index) => {
+        if (!reduceMotion) cardItems.forEach((item, index) => {
             item.style.opacity = '0';
             item.style.transform = 'translateX(12px)';
             item.style.transition = `opacity 0.5s ease ${index * 0.1 + 0.6}s, transform 0.5s ease ${index * 0.1 + 0.6}s`;
@@ -1649,8 +1859,6 @@
                 item.style.transform = 'translateX(0)';
             }, 700 + index * 100);
         });
-
-        console.log('🚀 Olena Reikina — POPRAWNA WERSJA z metatagami');
     </script>
 </body>
 </html>
